@@ -343,14 +343,14 @@ body{
 .team-numbers{
    font-style: normal;
    font-weight: 600;
-   font-size: 3vw;
+   font-size: 45px;
    line-height: 68px;
    color: #FFFFFF;
 }
 .team-name{
    font-style: normal;
    font-weight: 500;
-   font-size: 2vw;
+   font-size: 24px;
    line-height: 36px;
    color: #FFFFFF;
 }
@@ -477,6 +477,19 @@ a:hover{
    .sofa-img, .chairs-img{
       width: 90%;
    }
+   .team{
+      flex-wrap: wrap;
+   }
+   .team-number{
+      width: calc(50%);
+      font-size: 30px;
+   }
+   .team-name{
+      font-size: 15px;
+   }
+   .about-p, .pg-sofa, .pg-chairs, .p-info{
+      text-align: center;
+   }
 }
 
 @media (max-width:420px){
@@ -530,7 +543,7 @@ a:hover{
       background-position: center;
    }
  }
- @media (min-width:500px) and (max-width:700px) {
+@media (min-width:500px) and (max-width:700px) {
    .sofa-left, .chairs-left{
       flex-direction: column;
       justify-content: space-around;
@@ -552,6 +565,19 @@ a:hover{
       padding: 5px;
       align-items: center;
       text-align: center;
+   }
+ }
+
+@media (min-width:500px) and (max-width:768px){
+   .more-info{
+      flex-wrap: wrap;
+   }
+   .more-info-left, .more-info-middle, .more-info-right{
+      width: calc(50% - 20%);
+   }
+   .btn-info{
+      display: flex;
+      justify-content: center;
    }
  }
 
